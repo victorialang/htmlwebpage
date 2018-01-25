@@ -1,0 +1,104 @@
+body{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Chevron-down%2C_Web_Fundamentals.svg/2000px-Chevron-down%2C_Web_Fundamentals.svg.png);
+  background-attachment: scroll;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: red;
+}
+#vid {
+  position: scroll;
+  float: right;
+  width: 100%;
+}
+#intro {
+  color: white;
+  font-family: Georgia;
+  font-size: 4em;
+  -webkit-text-stroke: 2px black;
+}
+#schedule {
+  font-family: Georgia;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  width: 20%;
+  margin: 10px 10px;
+}
+#stats {
+  font-family: Georgia;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  margin: 10px 10px;
+  width: 20%;
+}
+#terms{
+  font-family: Georgia;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  width: 20%;
+  margin: 10px 10px;
+}
+#player{
+  font-family: Georgia;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  margin: 10px 10px;
+}
+#past {
+  clear:both;
+  font-family: Georgia;
+  color: white;
+}
+#links {
+  color: white;
+}
+#links ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+#links h4 {
+  font-size: 3em;
+}
+#links ul li {
+  float: left;
+  width: 100%;
+}
+#links ul li a {
+  display: block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 10px 10px;
+}
+#links ul li a:hover{
+  animation: colors 1s linear 1 normal;
+  background-color: red;
+}
+@keyframes colors {
+  0% {background-color: black;}
+  10% {background-color: #353030;}
+  20% {background-color: #5B4F4F;}
+  30% {background-color: #735F5F;}
+  40% {background-color: #997C7C;}
+  50% {background-color: #BE9393;}
+  60% {background-color: #CD8888}
+  70% {background-color: #D47575;}
+  80% {background-color: #E36262;}
+  90% {background-color: #E14646;}
+  100% {background-color: #E82424;}
+}
+#home {
+  font-family: Georgia;
+}
+#footer {
+  color: white;
+  font-family: Georgia;
+}

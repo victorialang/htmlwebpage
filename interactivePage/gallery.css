@@ -1,0 +1,93 @@
+body{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Chevron-down%2C_Web_Fundamentals.svg/2000px-Chevron-down%2C_Web_Fundamentals.svg.png);
+  background-attachment: scroll;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: red;
+}
+#top{
+  font-family: Georgia;
+  font-size: 4em;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  float: right;
+  text-decoration: none;
+  position: fixed;
+  top: 1%;
+  right: 5%;
+}
+#link1:link{
+  text-decoration: none;
+  -webkit-text-stroke: 2px black;
+}
+#link1:visited {
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+#link1:hover{
+  font-size: 110%;
+  -webkit-text-stroke: 2px black;
+}
+#photos {
+  float: left;
+  width: 40%;
+  font-family: Georgia;
+}
+#sOne{
+  clear: both;
+}
+#one {
+  font-family: Georgia;
+  color: white;
+  background-color: red;
+}
+#outsideLinks{
+  font-family: Georgia;
+  float: right;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+#outsideLinks ul {
+  list-style-type: none;
+}
+#outsideLinks ul li{
+  clear: both;
+}
+#outsideLinks ul li a{
+  display: block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 10px 10px;
+}
+#outsideLinks ul li a:hover{
+  animation: colors 1s linear 1 normal;
+  background-color: red;
+}
+@keyframes colors {
+  0% {background-color: black;}
+  10% {background-color: #353030;}
+  20% {background-color: #5B4F4F;}
+  30% {background-color: #735F5F;}
+  40% {background-color: #997C7C;}
+  50% {background-color: #BE9393;}
+  60% {background-color: #CD8888}
+  70% {background-color: #D47575;}
+  80% {background-color: #E36262;}
+  90% {background-color: #E14646;}
+  100% {background-color: #E82424;}
+}
+#footer{
+  font-family: Georgia;
+  clear: both;
+}
+#oneH4{
+  color: white;
+  font-size: 2em;
+}
