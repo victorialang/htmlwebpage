@@ -1,0 +1,52 @@
+<div class="modal-content">
+  <form id="createUser" name="createUser" role="form" class="form-horizontal">
+    <div class="modal-header">
+      <button type="button" ng-click="modalController.cancel()" class="close"><span
+        aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      <h4 id="myModalLabel" class="modal-title">Creating user {{ modalController.user._id }}</h4>
+    </div>
+    <div class="modal-body">
+      <div role="alert" ng-show="modalController.formError" class="alert alert-danger">{{ modalController.formError }}</div>
+      <div role="alert" ng-show="modalController.formInfo" class="alert alert-info">{{ modalController.formInfo }}</div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Age</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="age" name="age" required="required" ng-model="modalController.user.age" class="form-control"/>
+        </div>
+        <label for="fname" class="col-xs-2 col-sm-2 control-label">First Name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="fname" name="fname" required="required" ng-model="modalController.user.firstName" class="form-control"/>
+        </div>
+        <label for="mname" class="col-xs-2 col-sm-2 control-label">Middle Name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="mname" name="mname" required="required" ng-model="modalController.user.middleName" class="form-control"/>
+        </div>
+        <label for="lname" class="col-xs-2 col-sm-2 control-label">Last name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="lname" name="lname" required="required" ng-model="modalController.user.lastName" class="form-control"/>
+        </div>
+        <label for="address" class="col-xs-2 col-sm-2 control-label">address</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="address" name="address" required="required" ng-model="modalController.user.address" class="form-control"/>
+        </div>
+        <label for="city" class="col-xs-2 col-sm-2 control-label">city</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="city" name="city" required="required" ng-model="modalController.user.city" class="form-control"/>
+        </div>
+        <label for="state" class="col-xs-2 col-sm-2 control-label">state</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="state" name="state" required="required" ng-model="modalController.user.state" class="form-control"/>
+        </div>
+          <label for="id" class="col-xs-2 col-sm-2 control-label">Id</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="id" name="id" required="required" ng-model="modalController.user._id" class="form-control"/>
+        </div>
+        </div>
+      </div>
+    <div class="modal-footer">
+      <button ng-click="modalController.cancel()" type="button" class="btn btndefault">
+        Cancel</button>
+      <button type="submit" ng-click="modalController.submitForm()" class="btn btn-primary">Create User</button>
+    </div>
+  </form>
+</div>
